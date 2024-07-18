@@ -63,10 +63,24 @@ async function loadInitialCards(cardsData) {
     });
 }
 
-function flipCard(card) {
+async function flipCard(card) {
     flips += 1;
     card.classList.toggle('purple');
     addTime(2);
+    await fetch('/api/event', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+            'Cookie': document.cookie
+        },
+        body: JSON.stringify({
+            eventName: 'Card Flipped',
+            roundId,
+            roundLevel,
+            card: card,
+            timestamp: new Date().toISOString()
+        })
+    });
 }
 
 function dragStart(event) {
@@ -105,8 +119,11 @@ function createCardElement(data, id) {
         const flipButton = document.createElement('button');
         flipButton.textContent = 'Flip';
         flipButton.className = 'flip-button';
-        flipButton.addEventListener('click', () => flipCard(card));
+        flipButton.addEventListener('click', async () => await flipCard(card));
         card.appendChild(flipButton);
+        setTimeout(() => {
+            card.removeChild(flipButton);
+        }, 3000);
     }
 
     if (data.suit === 'checkmark') {
