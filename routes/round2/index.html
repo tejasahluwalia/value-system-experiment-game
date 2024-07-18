@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draggable Playing Cards</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/game-styles.css">
 </head>
 <body>
+    <div class="score-clock-container">
+        <div class="timelimit">Time-limit: <span>90s</span></div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="clock">Time: <span id="clock">00:00</span></div>
+    </div>
     <div class="symbol top-left" data-suit="spades">&spades;</div>
     <div class="symbol top-right" data-suit="diamonds">&diams;</div>
     <div class="symbol bottom-left" data-suit="clubs">&clubs;</div>
@@ -17,13 +22,9 @@
         <div class="circle" id="circle"></div>
     </div>
     <div class="bottom-center">1, 2, 3, 4, 5, 6, 7, 8, 9, 10</div>
-
-    <div class="side-info">
-        <div id="timelimit">Time-limit: 90s</div>
-        <div id="score">Score: 0</div>
-        <div id="time">Time: 0s</div>
-    </div>
-
+    <script src="/cards.js"></script>
     <script src="script.js"></script>
+    <script src="/game.js"></script>
+    <script src="/clock.js"></script>
 </body>
 </html>

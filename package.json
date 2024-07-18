@@ -1,17 +1,19 @@
 {
-  "name": "proj",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "mongodb": "^6.8.0"
-  }
+	"name": "value-system-experiment-game",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"cookie-parser": "^1.4.6",
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"mongodb": "^6.8.0"
+	}
 }

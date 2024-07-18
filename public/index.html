@@ -11,31 +11,25 @@
 <div class="container">
     <h1>Value system</h1>
     <p>Enter your information to start the game. Make sure to fill in all the fields correctly.</p>
-    <form onsubmit="submitForm(event)">
+    <form action="/api/user" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
-        <div id="nameError" class="error"></div>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-        <div id="emailError" class="error"></div>
 
         <label for="age">Age:</label>
-        <input type="number" id="age" name="age" required>
-        <div id="ageError" class="error"></div>
+        <input type="number" id="age" name="age" min="0" required>
 
         <label for="city">City:</label>
         <input type="text" id="city" name="city" required>
-        <div id="cityError" class="error"></div>
 
         <label for="gender">Gender:</label>
         <input type="text" id="gender" name="gender" required>
-        <div id="genderError" class="error"></div>
 
         <input type="submit" value="Start Game">
     </form>
 </div>
 
-<script src="script.js"></script>
 </body>
 </html>
