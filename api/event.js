@@ -1,8 +1,8 @@
 import { client } from '../lib/db.js';
 
 export async function addEvent(req, res) {
-    const cookies = req.headers.cookie;
-    const userId = cookies.split(';').find(cookie => cookie.includes('user_id')).split('=')[1];
+    const cookies = req.cookies;
+    const userId = cookies['user_id'];
 
     try {
         let db = client.db(process.env.MONGODB_DB);
