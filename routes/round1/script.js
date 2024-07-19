@@ -1,19 +1,10 @@
-// const cardsData = [
-//     [{ value: '1', suit: 'checkmark' }, { value: '2', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }, { value: '4', suit: 'checkmark' }, { value: '2', suit: 'checkmark' }],
-//     [{ value: '5', suit: 'checkmark' }, { value: '6', suit: 'checkmark' }, { value: '7', suit: 'checkmark' }, { value: '8', suit: 'checkmark' }, { value: '5', suit: 'checkmark' }],
-//     [{ value: '9', suit: 'checkmark' }, { value: '10', suit: 'checkmark' }, { value: 'J', suit: 'checkmark' }, { value: 'Q', suit: 'checkmark' }, { value: '8', suit: 'checkmark' }],
-//     [{ value: 'K', suit: 'checkmark' }, { value: '1', suit: 'checkmark' }, { value: '2', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }],
-//     [{ value: '4', suit: 'checkmark' }, { value: '5', suit: 'checkmark' }, { value: '6', suit: 'checkmark' }, { value: '7', suit: 'checkmark' }, { value: '5', suit: 'checkmark' }],
-//     [{ value: '8', suit: 'checkmark' }, { value: '9', suit: 'checkmark' }, { value: '10', suit: 'checkmark' }, { value: 'J', suit: 'checkmark' }, { value: 'K', suit: 'checkmark' }]
-// ];
-
 const cardsData = [
-    [{ value: '1', suit: 'checkmark' }],
-    [{ value: '5', suit: 'checkmark' }],
-    [{ value: '9', suit: 'checkmark' }],
-    [{ value: 'K', suit: 'checkmark' }],
-    [{ value: '4', suit: 'checkmark' }],
-    [{ value: '8', suit: 'checkmark' }]
+    [{ value: '1', suit: 'checkmark' }, { value: '2', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }, { value: '4', suit: 'checkmark' }, { value: '2', suit: 'checkmark' }],
+    [{ value: '5', suit: 'checkmark' }, { value: '6', suit: 'checkmark' }, { value: '7', suit: 'checkmark' }, { value: '8', suit: 'checkmark' }, { value: '5', suit: 'checkmark' }],
+    [{ value: '9', suit: 'checkmark' }, { value: '10', suit: 'checkmark' }, { value: 'J', suit: 'checkmark' }, { value: 'Q', suit: 'checkmark' }, { value: '8', suit: 'checkmark' }],
+    [{ value: 'K', suit: 'checkmark' }, { value: '1', suit: 'checkmark' }, { value: '2', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }],
+    [{ value: '4', suit: 'checkmark' }, { value: '5', suit: 'checkmark' }, { value: '6', suit: 'checkmark' }, { value: '7', suit: 'checkmark' }, { value: '5', suit: 'checkmark' }],
+    [{ value: '8', suit: 'checkmark' }, { value: '9', suit: 'checkmark' }, { value: '10', suit: 'checkmark' }, { value: 'J', suit: 'checkmark' }, { value: 'K', suit: 'checkmark' }]
 ];
 
 let roundLevel = 1;
