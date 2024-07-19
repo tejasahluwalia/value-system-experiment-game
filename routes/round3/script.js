@@ -1,10 +1,10 @@
 const cardsData = [
-    [{ value: '1', suit: 'checkmark' }, { value: '2', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }, { value: '4', suit: 'checkmark' }, { value: '8', suit: 'checkmark' }],
+    [{ value: '3', suit: 'checkmark' }, { value: 'Q', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }, { value: '9', suit: 'checkmark' }, { value: '4', suit: 'checkmark' }],
     [{ value: '5', suit: 'checkmark' }, { value: '6', suit: 'checkmark' }, { value: '7', suit: 'checkmark' }, { value: '8', suit: 'checkmark' }, { value: '7', suit: 'hearts' }],
-    [{ value: '9', suit: 'checkmark' }, { value: '10', suit: 'checkmark' }, { value: 'J', suit: 'clubs' }, { value: 'Q', suit: 'clubs' }, { value: '6', suit: 'checkmark' }],
+    [{ value: '9', suit: 'checkmark' }, { value: '10', suit: 'checkmark' }, { value: 'J', suit: 'clubs' }, { value: 'Q', suit: 'diamonds' }, { value: '6', suit: 'checkmark' }],
     [{ value: 'K', suit: 'checkmark' }, { value: '1', suit: 'checkmark' }, { value: '2', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }, { value: '5', suit: 'checkmark' }],
-    [{ value: '4', suit: 'checkmark' }, { value: '5', suit: 'checkmark' }, { value: '6', suit: 'checkmark' }, { value: '7', suit: 'checkmark' }, { value: '9', suit: 'spades' }],
-    [{ value: '8', suit: 'checkmark' }, { value: '9', suit: 'hearts' }, { value: '10', suit: 'checkmark' }, { value: 'J', suit: 'spades' }, { value: 'Q', suit: 'checkmark' }]
+    [{ value: '4', suit: 'checkmark' }, { value: '5', suit: 'checkmark' }, { value: '6', suit: 'checkmark' }, { value: '7', suit: 'checkmark' }, { value: '9', suit: 'clubs' }],
+    [{ value: '8', suit: 'checkmark' }, { value: '9', suit: 'diamonds' }, { value: '10', suit: 'checkmark' }, { value: 'J', suit: 'hearts' }, { value: 'Q', suit: 'checkmark' }]
 ];
 
 let roundLevel = 3;
