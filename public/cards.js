@@ -68,7 +68,7 @@ async function flipCard(card) {
     const currentCard = {
         value: card.getAttribute('data-value'),
         suit: card.getAttribute('data-suit'),
-        index: parseInt(card.getAttribute('id')) - 1
+        index: parseInt(card.getAttribute('id').replace('card', '')) - 1,
     }
     addTime(2);
     await fetch('/api/event', {
