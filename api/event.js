@@ -3,6 +3,7 @@ import { client } from '../lib/db.js';
 export async function addEvent(req, res) {
     const cookies = req.cookies;
     const userId = cookies['user_id'];
+    console.log('userId', userId);
 
     try {
         let db = client.db(process.env.MONGODB_DB);

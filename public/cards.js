@@ -65,6 +65,11 @@ async function loadInitialCards(cardsData) {
 async function flipCard(card) {
     flips += 1;
     card.classList.toggle('purple');
+    const currentCard = {
+        value: card.getAttribute('data-value'),
+        suit: card.getAttribute('data-suit'),
+        index: parseInt(card.getAttribute('id')) - 1
+    }
     addTime(2);
     await fetch('/api/event', {
         method: 'PUT',
@@ -75,7 +80,7 @@ async function flipCard(card) {
             eventName: 'Card Flipped',
             roundId,
             roundLevel,
-            card: card,
+            currentCard,
             timestamp: new Date().toISOString()
         })
     });

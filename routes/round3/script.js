@@ -9,7 +9,7 @@ const cardsData = [
 
 let roundLevel = 3;
 
-function drop(event) {
+async function drop(event) {
     event.preventDefault();
     const id = event.dataTransfer.getData('text/plain');
     const draggableElement = document.getElementById(id);
@@ -47,14 +47,6 @@ function drop(event) {
                 points = -10;
                 wrong += 1
             }
-        } else if (dropZone.closest('.circle-container')) {
-            const dropRect = circleContainer.getBoundingClientRect();
-            const dropX = event.clientX - dropRect.left;
-            const dropY = event.clientY - dropRect.top;
-            draggableElement.style.left = `${dropX - draggableElement.offsetWidth / 2}px`;
-            draggableElement.style.top = `${dropY - draggableElement.offsetHeight / 2}px`;
-            highlightCurrentStack();
-            return;
         } else {
             highlightCurrentStack();
             return;
@@ -111,6 +103,23 @@ function drop(event) {
         draggableElement.remove();
         loadNextCard(cardIndex, placeholder);
     }, 500);
+
+    let currentCard = { value: cardValue, suit: cardSuit, index: cardIndex }
+    console.log('currentCard', currentCard)
+    await fetch('/api/event', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            eventName: 'Card Dropped',
+            roundId,
+            roundLevel,
+            currentCard,
+            points,
+            timestamp: new Date().toISOString()
+        })
+    });
 }
 
 window.addEventListener('resize', positionCards);

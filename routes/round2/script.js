@@ -9,7 +9,7 @@ const cardsData = [
 
 let roundLevel = 2;
 
-function drop(event) {
+async function drop(event) {
     event.preventDefault();
     const id = event.dataTransfer.getData('text/plain');
     const draggableElement = document.getElementById(id);
@@ -103,6 +103,22 @@ function drop(event) {
         draggableElement.remove();
         loadNextCard(cardIndex, placeholder);
     }, 500);
+
+    let currentCard = { value: cardValue, suit: cardSuit, index: cardIndex }
+    await fetch('/api/event', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            eventName: 'Card Dropped',
+            roundId,
+            roundLevel,
+            currentCard,
+            points,
+            timestamp: new Date().toISOString()
+        })
+    });
 }
 
 

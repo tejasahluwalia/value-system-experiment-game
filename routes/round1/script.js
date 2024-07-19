@@ -101,7 +101,7 @@ async function drop(event) {
             loadNextCard(cardIndex, placeholder);
         }, 500);
     }
-
+    let currentCard = { value: cardValue, suit: cardSuit, index: cardIndex }
     await fetch('/api/event', {
         method: 'PUT',
         headers: {
@@ -111,7 +111,7 @@ async function drop(event) {
             eventName: 'Card Dropped',
             roundId,
             roundLevel,
-            currentCard: JSON.stringify({ value: cardValue, suit: cardSuit, index: cardIndex }),
+            currentCard,
             points,
             timestamp: new Date().toISOString()
         })
