@@ -51,7 +51,6 @@ async function loadInitialCards(cardsData) {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
-            'Cookie': document.cookie
         },
         body: JSON.stringify({
             eventName: 'Round Started',
@@ -71,7 +70,6 @@ async function flipCard(card) {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
-            'Cookie': document.cookie
         },
         body: JSON.stringify({
             eventName: 'Card Flipped',
@@ -181,7 +179,6 @@ async function loadNextCard(cardIndex, placeholder) {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
-                'Cookie': document.cookie
             },
             body: JSON.stringify({
                 eventName: 'Round Ended',
