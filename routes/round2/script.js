@@ -1,6 +1,6 @@
 const cardsData = [
-    [{ value: '2', suit: 'checkmark' }, { value: '8', suit: 'spades' }, { value: '4', suit: 'checkmark' }, { value: '2', suit: 'diamonds' }, { value: '11', suit: 'checkmark' }],
-    [{ value: 'Q', suit: 'checkmark' }, { value: '7', suit: 'spades' }, { value: '3', suit: 'hearts' }, { value: '11', suit: 'checkmark' }, { value: 'Q', suit: 'spades' }],
+    [{ value: '2', suit: 'checkmark' }, { value: '8', suit: 'spades' }, { value: '4', suit: 'checkmark' }, { value: '2', suit: 'diamonds' }, { value: 'J', suit: 'checkmark' }],
+    [{ value: 'Q', suit: 'checkmark' }, { value: '7', suit: 'spades' }, { value: '3', suit: 'hearts' }, { value: 'J', suit: 'checkmark' }, { value: 'Q', suit: 'spades' }],
     [{ value: '4', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }, { value: '6', suit: 'diamonds' }, { value: 'K', suit: 'clubs' }, { value: '2', suit: 'clubs' }],
     [{ value: '1', suit: 'checkmark' }, { value: '6', suit: 'checkmark' }, { value: '9', suit: 'checkmark' }, { value: '10', suit: 'checkmark' }, { value: '4', suit: 'checkmark' }],
     [{ value: '5', suit: 'checkmark' }, { value: '2', suit: 'hearts' }, { value: 'K', suit: 'clubs' }, { value: '3', suit: 'spades' }, { value: '8', suit: 'hearts' }],
