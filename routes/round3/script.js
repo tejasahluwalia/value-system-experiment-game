@@ -1,10 +1,10 @@
 const cardsData = [
-    [{ value: '9', suit: 'checkmark' }, { value: '3', suit: 'spades' }, { value: 'K', suit: 'hearts' }, { value: 'Q', suit: 'diamonds' }, { value: '3', suit: 'checkmark' }],
-    [{ value: '2', suit: 'checkmark' }, { value: '6', suit: 'checkmark' }, { value: '2', suit: 'diamonds' }, { value: '4', suit: 'diamonds' }, { value: '10', suit: 'checkmark' }],
-    [{ value: 'K', suit: 'checkmark' }, { value: 'Q', suit: 'clubs' }, { value: '7', suit: 'checkmark' }, { value: '9', suit: 'diamonds' }, { value: 'J', suit: 'checkmark' }],
-    [{ value: 'Q', suit: 'checkmark' }, { value: 'K', suit: 'hearts' }, { value: 'J', suit: 'hearts' }, { value: '7', suit: 'checkmark' }, { value: '6', suit: 'hearts' }],
-    [{ value: '7', suit: 'checkmark' }, { value: '9', suit: 'clubs' }, { value: '3', suit: 'hearts' }, { value: '9', suit: 'clubs' }, { value: '2', suit: 'checkmark' }],
-    [{ value: '10', suit: 'checkmark' }, { value: '7', suit: 'checkmark' }, { value: '5', suit: 'clubs' }, { value: '1', suit: 'clubs' }, { value: '3', suit: 'hearts' }]
+    [{ value: '9', suit: 'checkmark' }, { value: '3', suit: 'spades' }, { value: '5', suit: 'checkmark' }, { value: 'Q', suit: 'checkmark' }, { value: '3', suit: 'checkmark' }],
+    [{ value: '2', suit: 'checkmark' }, { value: '6', suit: 'checkmark' }, { value: '2', suit: 'checkmark' }, { value: '9', suit: 'diamonds' }, { value: '10', suit: 'checkmark' }],
+    [{ value: 'K', suit: 'checkmark' }, { value: 'Q', suit: 'clubs' }, { value: '7', suit: 'checkmark' }, { value: '4', suit: 'diamonds' }, { value: 'K', suit: 'hearts' }],
+    [{ value: 'Q', suit: 'checkmark' }, { value: 'J', suit: 'checkmark' }, { value: 'J', suit: 'hearts' }, { value: '7', suit: 'checkmark' }, { value: '6', suit: 'hearts' }],
+    [{ value: '7', suit: 'checkmark' }, { value: '9', suit: 'clubs' }, { value: '3', suit: 'hearts' }, { value: '9', suit: 'checkmark' }, { value: '2', suit: 'checkmark' }],
+    [{ value: '10', suit: 'checkmark' }, { value: '7', suit: 'checkmark' }, { value: 'K', suit: 'clubs' }, { value: '5', suit: 'clubs' }, { value: '3', suit: 'hearts' }]
 ]; 
 
 let roundLevel = 3;
