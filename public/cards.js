@@ -24,6 +24,12 @@ function highlightCurrentStack() {
     const currentCard = document.querySelector(`#card${currentStackIndex + 1}`);
     if (currentCard) {
         currentCard.style.borderColor = 'yellow';
+        if (currentCard.classList.contains('purple')) {
+            const spanSuit = currentCard.querySelector('.suit');
+            if (spanSuit) {
+                spanSuit.style.opacity = '1';
+            }
+        }
     }
 }
 
@@ -65,6 +71,10 @@ async function loadInitialCards(cardsData) {
 async function flipCard(card) {
     flips += 1;
     card.classList.toggle('purple');
+    const spanSuit = card.querySelector('.suit');
+    if (spanSuit) {
+        spanSuit.style.opacity = '0';
+    }
     const currentCard = {
         value: card.getAttribute('data-value'),
         suit: card.getAttribute('data-suit'),
@@ -158,7 +168,7 @@ async function loadNextCard(cardIndex, placeholder) {
         setTimeout(() => {
             const suitElement = nextCard.querySelector('.suit');
             if (suitElement) {
-                suitElement.style.color = 'transparent';
+                suitElement.style.opacity = '0';
             }
         }, 3000);
     } else {
